@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html{
+    overflow-x:none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: white;
+    scroll-behavior: smooth;
+
+
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(1, 36, 100);
+    border-radius: 5px;
+}
+.navContainer{
+    position: relative;
+    position: sticky;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(23 41 103);
+    background: linear-gradient(to bottom, rgb(54, 74, 148) 0%, rgb(8, 27, 99) 100%);
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    padding: 5px 0;
+    transition-duration: 500ms;
+  
+}
+
+
+
+.bismillahContainer{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+ }
+
+ .navlinkContainer{
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+    align-items: center;
+}
+ .bismillah{
+    width: 55%;
+    margin: 0;
+ }
+
+
+
+ .singleLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .singleLink a{
+    padding: 10px;
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+font-family: 'Edu NSW ACT Foundation', cursive;
+ }
+
+.lineContainer{
+    position: absolute;
+    top: 15px;
+    left: 0.55%;
+    display: none;
+}
+ .line{
+    background-color: #fffcfc;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+
+
+
+#mainHeading{
+    font-size: 3.2rem;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    text-align: center;
+    font-weight: 100;
+    word-spacing: 6px;
+   
+
+}
+
+
+/* .line1{
+    width: 90%;
+    height: 2.5px;
+    background-color: rgb(24, 71, 122);
+    position: absolute;
+    top: 69px;
+    left: 0%;
+}
+
+.line2{
+    width: 33%;
+    height: 3px;
+    background-color: rgb(24, 71, 122);
+    position: absolute;
+    top: 67px;
+    right: 0%;
+} */
+
+.starContainer{
+ position: absolute;
+    top: 60px;
+   
+}
+
+.star__image{
+    
+    width: 26px;
+    
+   
+
+}
+.mainContainer{
+    overflow: hidden;
+}
+
+.background{
+    height: 88vh;
+    background-image: url('mosque.jpg');
+    width: 100%;
+    background-size: cover;
+   background-color: rgba(0, 0, 0, 0.27);
+   background-blend-mode: darken;
+   background-position: center;
+   overflow: hidden;
+   overflow-y: hidden;
+   }
+   
+   
+   .textContent{
+       width: 85%;
+       margin: 0 auto;
+       padding-top: 80px;
+       
+   }
+
+   .paraHeading{
+   text-align: center;
+   }
+
+   .paragraph{
+    text-align: justify;
+    word-spacing: 7px;
+    font-size: 1.2rem;
+    padding-top: 15px;
+   }
+
+   
+   .download{
+    position: absolute;
+    top: 30px;
+    font-size: 1.3rem;
+    left: 3%;
+    color: whie;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    
+}
+   
+
+@media only screen and (max-width: 1050px) {
+
+
+    .bismillahContainer{
+        width: 80%;
+    }
+
+    .bismillah{
+        width: 60%;
+
+    }
+
+    .navlinkContainer{
+        width: 35%;
+    }
+
+     }
+ 
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+.navlinkContainer{
+    display: none;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition-duration: 600ms;
+    animation-duration: 700ms;
+    clip-path: polygon(0 0, 100% 0,  100% 0%, 0 0% );
+    height: 0;
+}
+
+
+.singleLink{
+    width: 100%;
+    text-align: center;
+    /* background-color: rgb(12, 56, 151); */
+    border-top: 1px solid rgba(0, 0, 0, 0.295);
+    font-size: 1.6rem;
+}
+
+#home{
+    border-top: 1px solid rgba(0, 0, 0, 0.295);
+    margin-top: 4px;
+}
+
+#about{
+    border-bottom: none;
+}
+.bismillahContainer{
+    width: 100%;
+    flex-direction: column-reverse;
+}
+
+.bismillah{
+    width: 100%;
+    margin: 0 auto;
+}
+.lineContainer{
+    display: block;
+}
+
+ #mainHeading{
+    font-size: 2rem;
+ }
+ }
+
+
+.active{
+   height: 100%;  
+  clip-path: polygon(0 0, 100% 0,  100% 100%, 0 100% );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-width: 500px) {
+
+    .bismillah{
+        width: 100%;
+    }
+
+    #mainHeading{
+        font-size: 1.8rem;
+        color: rgb(255, 255, 255);
+        font-family: 'Bebas Neue', cursive;
+        font-family: 'Edu NSW ACT Foundation', cursive;
+    }
+
+    .lineContainer{
+        top: 13px;
+        }
+
+        .background{
+            background-position: right;
+        }
+ }
+
+
+ @media only screen and (max-width: 330px) {
+
+    .bismillah{
+        width: 100%;
+    }
+
+    #mainHeading{
+        font-size: 1.4rem;
+        color: rgb(255, 255, 255);
+        font-family: 'Bebas Neue', cursive;
+        font-family: 'Edu NSW ACT Foundation', cursive;
+    }
+
+    .lineContainer{
+        top: 13px;
+        }
+
+        .background{
+            background-position: right;
+        }
+
+        .line{
+            background-color: #fffcfc;
+            width: 17px;
+            height: 2px;
+            margin: 3px;
+            border-radius: 4px;
+        }
+ }
