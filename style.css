@@ -35,7 +35,7 @@ body{
     display: flex;
     align-items: center;
     background-color: rgb(23 41 103);
-    background: linear-gradient(to bottom, rgb(54, 74, 148) 0%, rgb(8, 27, 99) 100%);
+    background: linear-gradient(to bottom, rgb(54, 74, 148) 0%, rgb(11, 36, 127) 100%);
     font-family: 'Bebas Neue', cursive;
     font-family: 'Edu NSW ACT Foundation', cursive;
     padding: 5px 0;
